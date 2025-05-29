@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Counter from './count'
 import Batsman from './batsman'
@@ -8,17 +6,21 @@ import { Suspense } from 'react'
 import Friends from './friends'
 
 function App() {
-  function handleclick() {
-    alert("i am clicked")
-  }
-  const calculation = (num) => {
-    const value = num + 10;
-    alert(value);
-  }
-  const substract = (a, b) => {
-    const value = (a - b);
-    alert(value)
-  }
+//   function handleclick() {
+//     alert("i am clicked")
+//   }
+//   const calculation = (num) => {
+//     const value = num + 10;
+//     alert(value);
+//   }
+//   const substract = (a, b) => {
+//     const value = (a - b);
+//     alert(value)
+//   }
+  // const friendalternative=async()=>{
+  //   const res=await fetch('https://jsonplaceholder.typicode.com/users');
+  //   return res.json();
+  // }
   
 
   const friends=fetch('https://jsonplaceholder.typicode.com/users')
